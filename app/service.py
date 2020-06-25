@@ -18,4 +18,4 @@ def message(data):
     if response.status_code == 200:
         return { 'result': response.text }
     else:
-        returun { 'result': '' }
+        return { 'result': '' }
