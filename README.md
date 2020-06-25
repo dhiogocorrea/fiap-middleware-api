@@ -7,6 +7,13 @@ Esse projeto tem o intuito de pegar o resultado derivado do Watson e traduzir pa
 
 ### Como executar (sem docker):
 
+Instale as dependências
+```
+pip install -r requirements.txt
+```
+
+Execute:
+
 ```
 uvicorn main:app --reload
 ```
