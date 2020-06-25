@@ -4,4 +4,4 @@ services:
     fiap:
         build:
             context: .
-            dockerfile: .
+            dockerfile: Dockerfile
