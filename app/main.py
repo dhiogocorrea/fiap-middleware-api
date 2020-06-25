@@ -5,9 +5,9 @@ from fastapi.encoders import jsonable_encoder
 
 
 class Data(BaseModel):
-    selectedSymptoms: str
-    year: str
-    gender: str
+    selectedSymptoms: str = Field(None)
+    yearOfBirth: str = Field(None)
+    gender: str = Field(None)
 
 
 app = FastAPI(
