@@ -13,7 +13,7 @@ def get_diagnostics_and_specializations(data):
         
         for s in d['specialisation']:
             if s['name'] not in specialisations:
-                specialisations.append(s['name'])
+                specialisations.append(s['nameTranslated'])
     
     return diags, specialisations
 
