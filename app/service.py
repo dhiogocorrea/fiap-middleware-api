@@ -39,13 +39,20 @@ def message(data):
         return {
             'diagnostics': (', ').join(diags),
             'specialisation': (', ').join(specs),
-            'doctors': doctors(specs[0])
+            'doctors': doctors(specs)
         }
     else:
         return { 'result': '' }
 
 
-def doctors(spec):
+def doctors(specs):
+    if specs is None:
+        spec = 'Prático Geral'
+    else:
+        spec = specs[0]
+        if len(specs) > 1:
+            spec = specs[1]
+
     return {
         'name': 'Dr. José Luiz',
         'specialisation': spec,
